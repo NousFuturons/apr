@@ -4,9 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo:start": "brew services start mongodb-community",
+    "mongo:stop": "brew services stop mongodb-community",
+    "mongo:restart": "brew services restart mongodb-community",
+    "mongo:status": "brew services list | grep mongodb",
+    "db:seed": "node server/scripts/seedDatabase.js",
+    "db:seed:points": "node server/scripts/seeds/pointsSeed.js",
+    "db:seed:media": "node server/scripts/seeds/mediaSeed.js",
+    "db:seed:users": "node server/scripts/seeds/usersSeed.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+    
+  }
 }

@@ -1,0 +1,6 @@
+use admin
+db.createUser({
+  username: "nicolasb",
+  password: "NICOLAS_Lesvagues2025!",
+  roles: [ { role: "userEditorAnyDatabase", db: "editor" } ]
+})
