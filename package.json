@@ -12,7 +12,9 @@
     "db:seed": "node server/scripts/seedDatabase.js",
     "db:seed:points": "node server/scripts/seeds/pointsSeed.js",
     "db:seed:media": "node server/scripts/seeds/mediaSeed.js",
-    "db:seed:users": "node server/scripts/seeds/usersSeed.js"
+    "db:seed:users": "node server/scripts/seeds/usersSeed.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
